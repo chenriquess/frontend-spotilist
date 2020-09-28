@@ -1,0 +1,14 @@
+.cover-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.playlist {
+    margin: 20px;
+}
+
+.cover {
+    max-width: 150px;
+}

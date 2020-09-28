@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="909a2caa-3dfa-49ee-987d-e8ed587fa2ca" name="Default Changelist" comment="" />
+    <list default="true" id="909a2caa-3dfa-49ee-987d-e8ed587fa2ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1h3le85oJiyjogV5kzD2svXd5go" />
   <component name="ProjectViewState">
@@ -16,6 +37,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\TAP\Spotilite\spotilite-frontend\src\components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -26,7 +66,71 @@
       <option name="presentableId" value="Default" />
       <updated>1599247749008</updated>
       <workItem from="1599247750065" duration="3000" />
+      <workItem from="1599331878487" duration="3786000" />
+      <workItem from="1599758305091" duration="13901000" />
+      <workItem from="1599831565294" duration="1412000" />
+      <workItem from="1599948352671" duration="1199000" />
+      <workItem from="1600021456231" duration="26000" />
+      <workItem from="1601144561244" duration="2465000" />
+      <workItem from="1601214662521" duration="12555000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1276" y="196" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599333609003">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1276" y="196" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1599333609003" />
+    <state x="701" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601258221272">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="701" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1080@0.0.2560.1080" timestamp="1601258221272" />
+    <state x="1134" y="261" key="FileChooserDialogImpl" timestamp="1600021479365">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1134" y="261" key="FileChooserDialogImpl/0.0.2560.1080@0.0.2560.1080" timestamp="1600021479365" />
+    <state width="1580" height="258" key="GridCell.Tab.0.bottom" timestamp="1601259495072">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1580" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1601259495072" />
+    <state width="1580" height="258" key="GridCell.Tab.0.center" timestamp="1601259495072">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1580" height="258" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1601259495072" />
+    <state width="1580" height="258" key="GridCell.Tab.0.left" timestamp="1601259495072">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1580" height="258" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1601259495072" />
+    <state width="1580" height="258" key="GridCell.Tab.0.right" timestamp="1601259495072">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1580" height="258" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1601259495072" />
+    <state x="916" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601215948904">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="916" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1080@0.0.2560.1080" timestamp="1601215948904" />
+    <state x="657" y="281" width="585" height="534" key="find.popup" timestamp="1601259068351">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="657" y="281" width="585" height="534" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601259068351" />
+    <state x="1109" y="270" key="run.anything.popup" timestamp="1601185971235">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1109" y="270" key="run.anything.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601185971235" />
   </component>
 </project>

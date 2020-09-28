@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-login {
+  background: transparent;
+  border: 2px solid aqua;
+  border-radius: 4px;
+  padding: 11px;
+  color: azure;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  cursor: pointer;
+  background: #61dafb;
+  color: #282c34;
+}
