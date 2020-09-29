@@ -7,6 +7,12 @@
 
 .playlist {
     margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.playlist:hover {
+    background: #202428;
 }
 
 .cover {
