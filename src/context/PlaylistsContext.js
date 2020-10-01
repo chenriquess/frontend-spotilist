@@ -1,24 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import SecurityService from '../services/SecurityService';
-import {findPlaylists, findPlaylistById} from "../services/PlaylistsService";
+import {findPlaylists, findPlaylistById} from "../services/SpotifyPlaylistsService";
 import api from "../api";
+import {getPlaylists} from "../services/LocalPlaylistsService";
 
 const $ = window.$;
 const PlaylistsContext = React.createContext();
 
-export const PlaylistsProvider = ({children}) => {
+export const PlaylistsProvider = ({ children }) => {
   const [autenticado, setAutenticado] = useState(SecurityService.isAutenticado());
   const [playlists, setPlaylists] = useState([]);
+  const [LocalPlaylists, setLocalPlaylists] = useState([]);
   const [musicList, setMusicList] = useState([]);
   const [tituloModal, setTituloModal] = useState('');
   const [textoModal, setTextoModal] = useState('');
+  const [currentLocalPlaylist, setCurrentLocalPlaylist] = useState({id: '', title: '', songs: []});
 
   useEffect(() => {
-    exibirModal('Músicas', 'Carregando Playlists...');
 
     async function fetchData() {
-      setPlaylists(await findPlaylists());
-      esconderModal();
+      setPlaylists(await findPlaylists() || []);
+      setLocalPlaylists(await getPlaylists())
     }
 
     fetchData();
@@ -41,21 +43,23 @@ export const PlaylistsProvider = ({children}) => {
   };
 
   const esconderModal = () => {
-    setTimeout(() => $('#lojaModal').modal('hide'), 500);
+    setTimeout(() => $('#modalPrincipal').modal('hide'), 500);
   };
 
   return (
     <PlaylistsContext.Provider value={{
-      seguranca: {autenticado, setAutenticado},
+      seguranca: { autenticado, setAutenticado },
       spotilist: {
-        playlists: playlists,
-        setPlaylists: setPlaylists,
+        playlists,
+        setPlaylists,
         findPlaylistById,
         loadPlaylistsMusics,
-        musicList,
+        musicList, setMusicList,
+        currentLocalPlaylist, setCurrentLocalPlaylist,
+        LocalPlaylists, setLocalPlaylists,
         searchMusic
       },
-      modal: {exibirModal, esconderModal, tituloModal, textoModal}
+      modal: { exibirModal, esconderModal, tituloModal, textoModal }
     }}>
       {children}
     </PlaylistsContext.Provider>

@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import PrivateInfo from "./PrivateInfo";
+import Home from "./components/Home";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Search from "./components/Search";
+import MusicList from "./components/MusicList";
 import Login from "./components/Login";
 import RotaPrivada from "./components/PrivateRoute";
 import {PlaylistsProvider} from "./context/PlaylistsContext";
 import Modal from "./components/Modal";
+import PlataformsLogin from "./components/PlataformsLogin";
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            {/*<Route path="/" exact component={Home} />*/}
-            <RotaPrivada path="/" exact component={PrivateInfo}/>
-            <Route path="/search" component={Search}/>
+            <RotaPrivada path="/plataforms-login" component={PlataformsLogin} />
+            <RotaPrivada path="/" exact component={Home}/>
+            <Route path="/search" component={MusicList}/>
             <Route path="/login"><Login/></Route>
           </Switch>
         </div>

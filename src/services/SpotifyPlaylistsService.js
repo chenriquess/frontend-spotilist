@@ -1,7 +1,7 @@
 import api from "../api";
 
 export const findPlaylists = async () => {
-  let res = await api.get('/spotify/playlist');
+  let res = await api.get('/spotify/playlists');
   return res.data;
 };
 

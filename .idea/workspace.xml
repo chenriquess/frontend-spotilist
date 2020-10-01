@@ -11,18 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="909a2caa-3dfa-49ee-987d-e8ed587fa2ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/PlataformsLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrivateInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrivateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PlaylistsCover.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlaylistsCover.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PlaylistsCover.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlaylistsCover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MusicList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/PlaylistsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/PlaylistsContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PlaylistsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PlaylistsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PlaylistsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/SpotifyPlaylistsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +39,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\TAP\Spotilite\spotilite-frontend\src\components" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\TAP\Spotilite\spotilite-frontend\src\components" />
     </key>
   </component>
@@ -82,7 +82,10 @@
       <workItem from="1601144561244" duration="2465000" />
       <workItem from="1601214662521" duration="13548000" />
       <workItem from="1601296591437" duration="11619000" />
-      <workItem from="1601421237365" duration="1086000" />
+      <workItem from="1601421237365" duration="13181000" />
+      <workItem from="1601508535251" duration="82000" />
+      <workItem from="1601508747907" duration="10780000" />
+      <workItem from="1601566684460" duration="3738000" />
     </task>
     <servers />
   </component>
@@ -110,26 +113,30 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="701" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1080@0.0.2560.1080" timestamp="1601258221272" />
+    <state x="616" y="139" width="1418" height="777" key="DiffContextDialog" timestamp="1601423512576">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="616" y="139" width="1418" height="777" key="DiffContextDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1601423512576" />
     <state x="1134" y="261" key="FileChooserDialogImpl" timestamp="1601340271924">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1134" y="261" key="FileChooserDialogImpl/0.0.2560.1080@0.0.2560.1080" timestamp="1601340271924" />
-    <state width="1580" height="258" key="GridCell.Tab.0.bottom" timestamp="1601421304040">
+    <state width="1523" height="258" key="GridCell.Tab.0.bottom" timestamp="1601522857551">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="1580" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1601421304040" />
-    <state width="1580" height="258" key="GridCell.Tab.0.center" timestamp="1601421304040">
+    <state width="1523" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1601522857551" />
+    <state width="1523" height="258" key="GridCell.Tab.0.center" timestamp="1601522857551">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="1580" height="258" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1601421304040" />
-    <state width="1580" height="258" key="GridCell.Tab.0.left" timestamp="1601421304040">
+    <state width="1523" height="258" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1601522857551" />
+    <state width="1523" height="258" key="GridCell.Tab.0.left" timestamp="1601522857551">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="1580" height="258" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1601421304040" />
-    <state width="1580" height="258" key="GridCell.Tab.0.right" timestamp="1601421304040">
+    <state width="1523" height="258" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1601522857551" />
+    <state width="1523" height="258" key="GridCell.Tab.0.right" timestamp="1601522857551">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="1580" height="258" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1601421304040" />
+    <state width="1523" height="258" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1601522857551" />
     <state x="665" y="241" key="RollbackChangesDialog" timestamp="1601334082297">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -138,17 +145,17 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="916" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1080@0.0.2560.1080" timestamp="1601215948904" />
-    <state x="657" y="281" width="585" height="534" key="find.popup" timestamp="1601336867841">
+    <state x="657" y="281" width="585" height="534" key="find.popup" timestamp="1601519580265">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="657" y="281" width="585" height="534" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601336867841" />
-    <state x="1109" y="270" key="run.anything.popup" timestamp="1601185971235">
+    <state x="657" y="281" width="585" height="534" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601519580265" />
+    <state x="1109" y="270" key="run.anything.popup" timestamp="1601516989669">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1109" y="270" key="run.anything.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601185971235" />
-    <state x="538" y="264" key="search.everywhere.popup" timestamp="1601334475875">
+    <state x="1109" y="270" key="run.anything.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601516989669" />
+    <state x="538" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1601519317196">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="538" y="264" key="search.everywhere.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601334475875" />
+    <state x="538" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1601519317196" />
   </component>
 </project>
