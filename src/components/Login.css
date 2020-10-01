@@ -1,0 +1,10 @@
+.login-container {
+    height: 100vh !important;
+}
+
+.login-outter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+}
