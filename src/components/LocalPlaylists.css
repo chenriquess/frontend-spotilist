@@ -53,3 +53,7 @@
     display: block !important;
     margin: 15px auto;
 }
+
+.list-group-item-dark {
+    background: transparent !important;
+}

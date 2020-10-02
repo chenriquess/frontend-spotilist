@@ -48,7 +48,7 @@ export const PlaylistsProvider = ({ children }) => {
 
   return (
     <PlaylistsContext.Provider value={{
-      seguranca: { autenticado, setAutenticado },
+      security: { autenticado, setAutenticado },
       spotilist: {
         playlists,
         setPlaylists,

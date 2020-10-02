@@ -9,8 +9,7 @@ const CreateUser = () => {
 
   const create = async () => {
     if (SecurityService.isAutenticado()) {
-      const res = await axios.post('http://localhost:5000/user', { email, senha })
-      console.log(res.data)
+      await axios.post('http://localhost:5000/user', { email, senha })
     }
   }
 

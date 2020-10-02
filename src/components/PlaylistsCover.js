@@ -1,11 +1,17 @@
 import React, {useContext} from 'react';
 import './PlaylistsCover.css'
 import PlaylistsContext from "../context/PlaylistsContext";
+import {useHistory} from "react-router-dom";
 
 const PlaylistsCover = (props) => {
   const {playlists} = props;
   const {spotilist} = useContext(PlaylistsContext);
+  const history = useHistory();
 
+  const loginPlataform = () => {
+    history.push('/plataforms-login');
+    window.location.reload();
+  }
 
   const clickPlaylist = (id) => {
     spotilist.loadPlaylistsMusics(id);
@@ -22,7 +28,7 @@ const PlaylistsCover = (props) => {
 
   return (
     <div className="cover-wrapper">
-      {playlists.map(renderPlaylists)}
+      {playlists.length ? playlists.map(renderPlaylists) : <button className="btn btn-primary" onClick={loginPlataform}>Login Spotify</button>}
     </div>
   );
 };

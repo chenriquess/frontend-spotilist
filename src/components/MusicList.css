@@ -4,3 +4,8 @@
     height: fit-content;
     padding-top: 30px;
 }
+
+.list-group-item-dark {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}

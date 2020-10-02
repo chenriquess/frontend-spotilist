@@ -8,6 +8,9 @@ import RotaPrivada from "./components/PrivateRoute";
 import {PlaylistsProvider} from "./context/PlaylistsContext";
 import Modal from "./components/Modal";
 import PlataformsLogin from "./components/PlataformsLogin";
+import ListUser from "./components/ListUsers";
+import EditUser from "./components/EditUser";
+import CreateUser from "./components/CreateUser";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
             <RotaPrivada path="/" exact component={Home}/>
             <Route path="/search" component={MusicList}/>
             <Route path="/login"><Login/></Route>
+            <RotaPrivada path="/list-users"><ListUser /></RotaPrivada>
+            <RotaPrivada path="/edit/:id" component={EditUser} />
+            <Route path="/create-user" component={CreateUser} />
           </Switch>
         </div>
       </Router>

@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
 import PlaylistsContext from "../context/PlaylistsContext";
-import {createPlaylist, updatePlaylist} from "../services/LocalPlaylistsService";
+import {createPlaylist, deletePlaylist, updatePlaylist} from "../services/LocalPlaylistsService";
 import './LocalPlaylists.css'
 
 const LocalPlaylists = () => {
@@ -14,6 +14,28 @@ const LocalPlaylists = () => {
     console.log('selecionada:', PlaylistSelected)
   }
 
+  const musicRender = (item, index) => {
+    return <div key={index} className="list-group-item list-group-item-dark">
+      <div className="row">
+        <div className="col text-dark">
+          {item.title}
+        </div>
+        <div className="col text-dark">
+          {item.artists.join(', ')}
+        </div>
+        <div className="col text-dark">
+          {item.album}
+        </div>
+        <div className="col text-center text-dark">
+          {item.popularity}
+        </div>
+        <div className="col text-right text-dark">
+          <button className="btn btn-link" onClick={() => removerMusica(item)}>Remover</button>
+        </div>
+      </div>
+    </div>
+  }
+
   const localPlaylistsRender = (playlistItem, i) => {
     return <div key={i} className="playlist-box ml-5" onClick={() => newPlaylistSelected(playlistItem)}
                 onDoubleClick={() => modal.exibirModal('Editar playlist', modalInput())}>
@@ -21,6 +43,12 @@ const LocalPlaylists = () => {
         {playlistItem.title || 'Playlist sem nome'}
       </span>
     </div>
+  }
+
+  const removerPlaylist = async () => {
+    const res = await deletePlaylist(spotilist.currentLocalPlaylist._id);
+    window.location.reload();
+    console.log(res);
   }
 
   const savePlaylist = async () => {
@@ -58,12 +86,23 @@ const LocalPlaylists = () => {
     return <>
       <input type="text" className="mb-5" onChange={(e) => setValor(e)}/>
       <h3>Musicas:</h3> {emptySongsLabel(spotilist.currentLocalPlaylist.songs.length)}
-      {spotilist.currentLocalPlaylist.songs.length ? spotilist.currentLocalPlaylist.songs.map((item, index) => {
-        return <p key={index}>
-          {item.id} - {item.title} - {item.artists.join(', ')} - Album: {item.album} - Popularity: {item.popularity}
-          <a href="#" onClick={() => removerMusica(item)}>Remover</a>
-        </p>
-      }) : null}
+
+      {spotilist.currentLocalPlaylist.songs.length ?
+      <div className="row">
+        <div className="col text-center">Nome</div>
+        <div className="col text-center">Artistas</div>
+        <div className="col text-center">Album</div>
+        <div className="col text-center">Popularidade</div>
+        <div className="col text-center"> </div>
+      </div>
+      : null}
+      <div className="list-group list-group-flush">
+        {spotilist.currentLocalPlaylist.songs.length ? spotilist.currentLocalPlaylist.songs.map(musicRender) : null}
+      </div>
+
+      {spotilist.currentLocalPlaylist._id ?
+        <button className="btn btn-danger" onClick={() => removerPlaylist()}>Apagar Playlist</button>
+      : null}
     </>
   }
 

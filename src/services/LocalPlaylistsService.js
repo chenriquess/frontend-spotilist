@@ -20,3 +20,8 @@ export const getPlaylists = async () => {
   let res = await api.get('/playlist/');
   return res.data;
 };
+
+export const deletePlaylist = async (playlistId) => {
+  let res = await api.delete('/playlist/' + playlistId);
+  return res.data;
+};
