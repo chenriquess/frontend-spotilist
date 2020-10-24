@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import SecurityService from "../services/SecurityService";
 import './Login.css'
+import {useHistory} from "react-router-dom";
 
 const CreateUser = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const history = useHistory();
 
   const create = async () => {
-    if (SecurityService.isAutenticado()) {
-      await axios.post('http://localhost:5000/user', { email, senha })
-    }
+    await axios.post('http://localhost:5000/user', { email, senha })
   }
+
+  const goToLogin = () => history.push("/login");
 
   return <div className="container login-container">
     <div className="login-outter">
@@ -28,7 +29,8 @@ const CreateUser = () => {
           <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} className="form-control"
                  id="exampleInputPassword1" placeholder="Password"/>
         </div>
-        <button type="button" onClick={create} className="btn btn-primary">Salvar</button>
+        <button type="button" onClick={() => create()} className="btn btn-primary">Salvar</button>
+        <button className="btn btn-primary ml-2" onClick={goToLogin}>Login</button>
       </form>
 
     </div>

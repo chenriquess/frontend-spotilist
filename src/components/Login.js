@@ -17,10 +17,7 @@ const Login = () => {
     }
   }
 
-  const goToCreateUser = () => {
-    history.push("/create-user");
-    window.location.reload();
-  }
+  const goToCreateUser = () => history.push("/create-user")
 
   return <div className="container login-container">
     <div className="login-outter">

@@ -7,7 +7,6 @@ import LocalPlaylists from "./LocalPlaylists";
 import Menu from "./Menu";
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 import RotaPrivada from "./PrivateRoute";
-import CreateUser from "./CreateUser";
 
 const Home = () => {
   const [playlists, setPlaylists] = useState([]);
