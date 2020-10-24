@@ -1,0 +1,20 @@
+
+version: '3.6'
+services:
+ frontend:
+   image: tap/app_frontend
+   depends_on: 
+    - backend
+   ports:
+     - "3000:80"
+ backend:
+   image: tap/app_backend
+   depends_on: 
+    - banco_de_dados
+   environment:
+     - DATABASE_URL=mongodb://banco_de_dados/spotilist
+     - PORTA=5000
+   ports:
+     - "5000:5000"
+ banco_de_dados:
+   image: mongo
